@@ -21,6 +21,7 @@ class block{
     if(this.x < 0){
       this.v *= -1
       this.hits++
+      document.querySelector('audio').play()
     }
   }
   collide(other){
@@ -30,7 +31,7 @@ class block{
       b1.v = v1
       b2.v = v2
       this.hits++
-      // document.querySelector('audio').play()
+      document.querySelector('audio').play()
     }
   }
   bounce(other){
